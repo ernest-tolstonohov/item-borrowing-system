@@ -1,0 +1,89 @@
+/* 
+ * CSS Stylesheet for Library of Stuff JavaFX Application
+ * Provides consistent styling across all screens
+ */
+
+/* Root styling */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Navigation buttons */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a5568;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-padding: 15 25 15 25;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #edf2f7;
+    -fx-text-fill: #2d3748;
+}
+
+.nav-button-active {
+    -fx-text-fill: #667eea;
+    -fx-border-color: #667eea;
+    -fx-background-color: white;
+}
+
+/* Table styling */
+.table-view {
+    -fx-background-color: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f7fafc;
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #2d3748;
+    -fx-padding: 12 15 12 15;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f7fafc;
+}
+
+/* Combo boxes */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box:focused {
+    -fx-border-color: #667eea;
+}
+
+/* Text fields */
+.text-field:focused {
+    -fx-border-color: #667eea;
+}
+
+/* Scroll pane */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Buttons hover effects */
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+.button:pressed {
+    -fx-opacity: 0.8;
+}

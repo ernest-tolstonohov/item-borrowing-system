@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="app.LoginController" stylesheets="@styles.css"
+    style="-fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);">
+
+    <VBox alignment="CENTER" spacing="20" maxWidth="400"
+        style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 5);">
+        <padding>
+            <Insets top="40" right="40" bottom="40" left="40" />
+        </padding>
+
+        <!-- Title -->
+        <Label text="📚 Library of Stuff"
+            style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #2d3748;" />
+
+        <Label text="Welcome! Please enter your username to continue"
+            style="-fx-font-size: 14px; -fx-text-fill: #718096;" wrapText="true"
+            textAlignment="CENTER" />
+
+        <Region prefHeight="20" />
+
+        <!-- Username field -->
+        <VBox spacing="8">
+            <Label text="Username"
+                style="-fx-font-size: 14px; -fx-font-weight: 500; -fx-text-fill: #4a5568;" />
+            <TextField fx:id="usernameField" promptText="Enter your username"
+                style="-fx-font-size: 14px; -fx-padding: 12 15 12 15; -fx-border-color: #e2e8f0; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;" />
+        </VBox>
+
+        <!-- Error label -->
+        <Label fx:id="errorLabel" style="-fx-text-fill: #e53e3e; -fx-font-size: 13px;"
+            wrapText="true" />
+
+        <!-- Login button -->
+        <Button fx:id="loginButton" text="Login / Register" onAction="#handleLogin"
+            style="-fx-background-color: #667eea; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: 600; -fx-padding: 12 24 12 24; -fx-background-radius: 8; -fx-cursor: hand;"
+            maxWidth="Infinity" />
+
+        <Label text="New users will be automatically registered"
+            style="-fx-font-size: 12px; -fx-text-fill: #a0aec0;" wrapText="true"
+            textAlignment="CENTER" />
+    </VBox>
+
+</StackPane>
